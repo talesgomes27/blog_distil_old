@@ -217,8 +217,10 @@ font-family: "Whitney SSm A", "Whitney SSm B", -apple-system, BlinkMacSystemFont
 body {
     font-family: "Whitney SSm A", "Whitney SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
+    background-color: #F6FDFF;
     overflow-x: hidden;
     overflow-y: auto
+    
 }
 
 .posts-list .description h2, .posts-list .description p {

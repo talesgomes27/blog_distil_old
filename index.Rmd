@@ -1,5 +1,46 @@
 ---
-title: "Últimos posts"
+title: "Tales Gomes"
+image: "static/pic2.jpg"
+links:
+  - label: '<i class="fab fa-github"></i> GitHub'
+    url: "https://github.com/talesgomes27"
+  - label: '<i class="fab fa-twitter"></i> Twitter'
+    url: "https://twitter.com/talesgomes2709"
+  - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+    url: "https://www.linkedin.com/in/tales-gomes-b4b12b32/"
+  - label: '<i class="fas fa-envelope"></i> E-mail'
+    url: "mailto:talesgomes27@gmail.com"
+base_url: blogdotales.netlify.app
+preview: static/pic2.jpg
+twitter:
+  creator: "@talesgomes27"
 site: distill::distill_website
-listing: posts
+output:
+  postcards::trestles
 ---
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+source(file.path("R", "functions.R"))
+library(distilltools)
+library(metathis)
+meta() %>%
+  meta_description(
+    "Este é o blog pessoal de Tales Gomes"
+  ) %>%
+  meta_name("github-repo" = "talesgomes27/blog") %>%
+  meta_viewport() %>%
+  meta_social(
+    title = "Blog do Tales",
+    url = "blogdotales.netlify.app",
+    image = "blogdotales.netlify.app/images/helveston.png",
+    image_alt = "Foto de Tales Gomes",
+    og_type = "blog",
+    og_author = c("Tales Gomes"),
+    twitter_card_type = "summary",
+    twitter_creator = "@talesgomes27"
+  )
+```
+
+### Seja bem vindo ao meu blog pessoal!
+
+Sou engenheiro da computação, formado pela universidade federal do Pará, Analista de dados e Ciência de dados estudante.
