@@ -3,17 +3,17 @@
     {
       "path": "about.html",
       "title": "Sobre",
-      "description": "Meu Blog",
+      "description": "Meu Blog\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-30T22:33:09-03:00"
+      "last_modified": "2021-08-31T18:49:53-03:00"
     },
     {
       "path": "index.html",
       "title": "Últimos posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-08-30T22:36:58-03:00"
+      "last_modified": "2021-08-31T19:19:30-03:00"
     }
   ],
   "collections": ["posts/posts.json"]

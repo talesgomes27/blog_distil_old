@@ -92,9 +92,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-08-14"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-08-14"/>
-<meta name="article:author" content="Tales Gomes"/>
+<meta property="article:published" itemprop="datePublished" content="2021-08-31"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-08-31"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
 <meta property="og:title" content="Blog do Tales: Bem vindo"/>
@@ -112,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Bem vindo"]},{"type":"character","attributes":{},"value":["Bem vindo ao meu blog"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Tales Gomes"]},{"type":"character","attributes":{},"value":["https://github.com/talesgomes27"]}]}]},{"type":"character","attributes":{},"value":["08-14-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Bem vindo"]},{"type":"character","attributes":{},"value":["Bem vindo ao meu blog"]},{"type":"character","attributes":{},"value":["08-31-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2053,37 +2052,252 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
 <style type="text/css">
-d-article div.sourceCode pre {
-  overflow-x: scroll !important;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f6f8fa;
-  border-left: 0;
+@import url("https://cloud.typography.com/6771036/7342412/css/fonts.css");
+
+d-article hr {
+grid-column: screen;
+width: 100%;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+
+d-byline .byline {
+grid-template-columns: 1fr 1fr;
+grid-column: text;
+font-family: "Ringside Narrow SSm A", "Ringside Narrow SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+d-article > d-code, d-article section > d-code {
+display: block;
+overflow-x: scroll !important;
+background: #f8f8f8 !important;
+border: 1px solid #ccc !important;
+border-radius: 1px !important;
+text-shadow: 0 0px white !important;
+font-family: "Operator Mono SSm A", "Operator Mono SSm B", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+}
+
+.highcharts-background{
+  width: 100% !important;
+}
+
+.highcharts-plot-background{
+  width: 100% !important;
+}
+
+
+.highcharts-container{
+  width: 100% !important;
+}
+
+.highcharts-root{
+  width: 100% !important;
+}
+
+.posts-list .posts-list-caption {
+grid-column: screen;
+font-family: "Whitney SSm A", "Whitney SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+font-weight: 400;
+color: #7d7d7d;
+letter-spacing: 0px;
+}
+
+d-article h4 {
+font-weight: 700;
+text-transform: revert;
+font-size: 15px;
+line-height: 1.4em;
+}
+
+d-article a {
+color: #4d4d4d;
 }
 
 .distill-site-nav {
   color: #ffffff;
-  font-weight: 400;
-  background: #24292e;
+  font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background: #4d4d4d;
   border-bottom: 2px solid #DECF40;
   -webkit-box-shadow: 1px 1px 18px #4d4d4d;
   -moz-box-shadow: 1px 1px 18px #4d4d4d;
   box-shadow: 1px 1px 18px #4d4d4d;
 }
 
+.distill-site-header .nav-left {
+  margin-left: 0px;
+  
+}
+
+.distill-site-header .nav-right {
+/* margin-right: 20px; */
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
 .distill-site-nav a:hover {
-  color: white;
-  font-weight: 700;
+color: #2d2d2d !important;
+background: #DECF40;
 }
 
 d-title {
-  background: #575757;
+padding-top: 10rem;
+background: #4d4d4d;
+font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+font-weight: 800;
+color: #fff;
+}
+
+d-title h1 {
+font-weight: 800;
+}
+
+details {
+  background-color: hsla(206, 95%, 20%, 0.2);
+  cursor: pointer;
+  color: #2d2d2d;
+  margin-bottom:1vh;
+  padding: 1em;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, details:hover {
+  transition: max-height 0.2s ease-out;
+  /* background-color: #acc2c2; */
+}
+
+details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-radius: 4px;
+}
+
+details.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  float: right;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0fe";
+}
+
+details[open] summary::after {
+  float: right;
+  font-family: "Font Awesome 5 Free";
+  content: "\f146";
+}
+
+details h4 {
+margin: 0;
+color: #2d2d2d !important;
+line-height: inherit;
+}
+
+code {
+color: #2A7DE1;
+font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+}
+
+d-article {
+  color: #6B6D6F;
+}
+
+d-article h1 {
+    font-weight: 800;
+    color: #2d2d2d;
+    font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0px !important;
+}
+
+::selection {
+color: #2d2d2d;
+text-shadow: none;
+background: rgba(222,207,64, 0.4);
+}
+
+.posts-list .metadata .publishedDate {
+font-family: "Ringside Narrow SSm A", "Ringside Narrow SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: .9px;
+color: #9d9d9d;
+}
+
+.posts-list .post-preview h2 {
+color: #2d2d2d;
+}
+
+.posts-list .post-preview h2 {
+font-size: 30px !important;
+font-weight: 700 !important;
+letter-spacing:0px !important;
+font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+d-article h1 {
+font-weight: 800;
+color: #2d2d2d;
+font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+letter-spacing: 3px;
+}
+
+d-article h2 {
+font-size: 24px;
+font-family: "Ringside Narrow SSm A", "Ringside Narrow SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+font-weight: 600;
+letter-spacing: 1px;
+color: #5da5da;
+border-bottom: 1.3px solid rgba(140, 143, 147, 0.5);
+}
+
+.highcharts-container text {
+font-family: "Whitney SSm A", "Whitney SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif  !important;
+}
+
+body {
+    font-family: "Whitney SSm A", "Whitney SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.posts-list .description h2, .posts-list .description p {
+    font-family: "Gotham SSm A", "Gotham SSm B", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
   color: white;
 }
 
+.distill-site-header {
+}
+
 .distill-site-footer {
-  border-top: 2px solid #DECF40;
-  border-bottom: 0;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
 }
 </style>
 <!--/radix_placeholder_site_in_header-->
@@ -2096,7 +2310,7 @@ d-title {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Bem vindo","description":"Bem vindo ao meu blog","authors":[{"author":"Tales Gomes","authorURL":"https://github.com/talesgomes27","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-14T00:00:00.000-03:00","citationText":"Gomes, 2021"}
+{"title":"Bem vindo","description":"Bem vindo ao meu blog","authors":[],"publishedDate":"2021-08-31T00:00:00.000-03:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2119,7 +2333,7 @@ d-title {
 <a href="https://www.linkedin.com/in/tales-gomes-b4b12b32/">
 <i class="fab fa-linkedin-in" aria-hidden="true"></i>
 </a>
-<a href="mailto:talesgomes27*erase|apague*@gmail.com">
+<a href="mailto:talesgomes27@gmail.com">
 <i class="fas fa-envelope" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
@@ -2137,11 +2351,6 @@ d-title {
 <p><p>Bem vindo ao meu blog</p></p>
 </div>
 
-<div class="d-byline">
-  Tales Gomes <a href="https://github.com/talesgomes27" class="uri">https://github.com/talesgomes27</a> 
-  
-<br/>08-14-2021
-</div>
 
 <div class="d-article">
 <p>Este blog foi feito com o intuito mostrar o meu portfólio, bem como compartilhar meu caminho de aprendizado. Buscarei postar aqui meus projetos e atualizarei esse poste com meus trabalhos mais relevantes.</p>
@@ -2164,7 +2373,11 @@ d-title {
 <div class="appendix-bottom"></div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+  <p>© 2021 criado por <a href="https://github.com/talesgomes27/">Tales Gomes</a>.</p>
+</div>
 <!--/radix_placeholder_navigation_after_body-->
+
 
 </body>
 

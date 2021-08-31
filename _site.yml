@@ -16,9 +16,9 @@ navbar:
     - icon: fab fa-linkedin-in
       href: https://www.linkedin.com/in/tales-gomes-b4b12b32/
     - icon: fas fa-envelope
-      href: mailto:talesgomes27*erase|apague*@gmail.com
+      href: mailto:talesgomes27@gmail.com
 output:
   distill::distill_article:
-    css: styles.css
     toc: true
-    toc_depth: 2
+    css: 
+      - mrworthington_theme.css

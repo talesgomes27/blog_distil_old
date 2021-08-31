@@ -2,10 +2,7 @@
 title: "Bem vindo"
 description: |
   Bem vindo ao meu blog
-author:
-  - name: Tales Gomes 
-    url: https://github.com/talesgomes27
-date: 08-14-2021
+date: 08-31-2021
 output:
   distill::distill_article:
     self_contained: false
