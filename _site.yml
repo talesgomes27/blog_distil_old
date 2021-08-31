@@ -1,0 +1,24 @@
+name: "Blog do Tales"
+title: "Blog do Tales"
+description: |
+  This blog was made to write things that range from my personal thoughts to my professional portfolio. 
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Sobre"
+      href: about.html
+    - icon: fas fa-briefcase
+      href: https://github.com/talesgomes27/
+    - icon: fab fa-github
+      href: https://github.com/talesgomes27/
+    - icon: fab fa-linkedin-in
+      href: https://www.linkedin.com/in/tales-gomes-b4b12b32/
+    - icon: fas fa-envelope
+      href: mailto:talesgomes27*erase|apague*@gmail.com
+output:
+  distill::distill_article:
+    css: styles.css
+    toc: true
+    toc_depth: 2

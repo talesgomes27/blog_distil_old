@@ -1,0 +1,32 @@
+---
+title: "Bem vindo"
+description: |
+  Bem vindo ao meu blog
+author:
+  - name: Tales Gomes 
+    url: https://github.com/talesgomes27
+date: 08-14-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+Este blog foi feito com o intuito mostrar o meu portfólio, bem como compartilhar meu caminho de aprendizado. Buscarei postar aqui meus projetos e atualizarei esse poste com meus trabalhos mais relevantes.
+
+
+  - [Aqui](https://github.com/talesgomes27/kaggle) você encontrará todos os mes projetos no [Kaggle](https://www.kaggle.com/talesgomes27).
+  - [Aqui](https://github.com/talesgomes27/tidytuesday) você encontrará todos os meus [Tidytuesdays](https://github.com/rfordatascience/tidytuesday).
+

@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Sobre",
+      "description": "Meu Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-30T21:46:55-03:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Últimos posts",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-08-30T22:10:45-03:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
