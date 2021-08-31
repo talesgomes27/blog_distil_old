@@ -1,0 +1,20 @@
+---
+output: github_document
+editor_options:
+  markdown:
+    mode: gfm
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# blog
+
+
+O objetivo deste projeto é publicar meu blog pessoal com meu portfólio, aprendizado e alguns pensamentos.
