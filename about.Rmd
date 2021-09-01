@@ -1,16 +1,76 @@
 ---
-title: "Sobre"
-description: |
-  Meu Blog
-output:
-  distill::distill_article:
-    css: bio_header.css
-    self_contained: false
-# creative_commons: CC BY-NC
+title: "Tales Gomes"
+image: "static/pic2.jpg"
+links:
+  - label: '<i class="fab fa-github"></i> GitHub'
+    url: "https://github.com/talesgomes27"
+  - label: '<i class="fab fa-twitter"></i> Twitter'
+    url: "https://twitter.com/talesgomes2709"
+  - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+    url: "https://www.linkedin.com/in/tales-gomes-b4b12b32/"
+  - label: '<i class="fas fa-envelope"></i> E-mail'
+    url: "mailto:talesgomes27@gmail.com"
+base_url: blogdotales.netlify.app
+preview: static/pic2.jpg
 twitter:
   creator: "@talesgomes27"
+output: postcards::jolla_blue
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+```{css echo=FALSE}
+h1 {
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+h3 {
+  color: darkgrey;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+h4 {
+  color: #cc0033;
+  text-transform: none;
+  font-size: 18px;
+  margin-top: 0px;
+}
+#icons {
+  color: #cc0033;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.btn {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+}
+.p-3 {
+  vertical-align: middle;
+  padding: 1.5rem!important;
+  box-sizing: border-box;
+}
+.p-3 img {
+  // border: 1px solid black;
+  border-radius: 50%!important;
+}
 ```
+
+```{r, printing-fuctions, echo=F}
+wrap_li <- function(text = "text", fa = "fas fa-graduation-cap") {
+  li <- paste0("<li><i class='fa-li ", fa, "'></i>", text, "</li>\n")
+  return(li)
+}
+print_list <- function(text = "text", fa = "fas fa-graduation-cap") {
+  open_ul  <- "<ul class='ul-edu fa-ul'>"
+  close_ul <- "</ul>"
+  items    <- wrap_li(text, fa)
+  cat(paste0(open_ul, "\n"), items, paste0("\n", close_ul))
+}
+```
+
+### Seja bem vindo ao meu blog pessoal!
+
+Sou engenheiro da computação, formado pela universidade federal do Pará, Analista de dados e Ciência de dados estudante.
