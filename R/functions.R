@@ -83,28 +83,28 @@ make_posts_page <- function(posts) {
 }
 
 get_post_categories <- function(posts) {
-  categories <- posts %>% 
-    select(-c("title", "src", "url", "description")) %>% 
+  categories <- posts |> 
+    select(-c("title", "src", "url", "description")) |> 
     pivot_longer(
       cols = everything(),
       names_to = "category",
-      values_to = "count") %>% 
-    group_by(category) %>% 
-    summarise(count = sum(count)) %>% 
+      values_to = "count") |> 
+    group_by(category) |> 
+    summarise(count = sum(count)) |> 
     arrange(desc(count))
   return(categories)
 }
 
 unite_post_categories <- function(posts, categories) {
-  posts <- posts %>% 
+  posts <- posts |> 
     pivot_longer(
       names_to = "categories", 
       values_to = "val", 
-      cols = categories$category) %>% 
-    mutate(val = ifelse(val == 1, categories, NA_character_)) %>% 
+      cols = categories$category) |> 
+    mutate(val = ifelse(val == 1, categories, NA_character_)) |> 
     pivot_wider(
       names_from = categories, 
-      values_from = val) %>% 
+      values_from = val) |> 
     unite(
       -c('title', 'src', 'url', 'description'), 
       col = "categories", sep = ";", na.rm = T)
@@ -210,7 +210,7 @@ last_updated <- function() {
   return(span(
     paste0(
       'Ultima atualização em ',
-      format(Sys.Date(), format="%B %d, %Y")
+      format(Sys.Date(), format="%d %B, %Y")
     ),
     style = "font-size:0.8rem;")
   )

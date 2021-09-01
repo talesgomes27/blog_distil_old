@@ -23,12 +23,12 @@ output:
 source(file.path("R", "functions.R"))
 library(distilltools)
 library(metathis)
-meta() %>%
+meta() |>
   meta_description(
     "Este é o blog pessoal de Tales Gomes"
-  ) %>%
-  meta_name("github-repo" = "talesgomes27/blog") %>%
-  meta_viewport() %>%
+  ) |>
+  meta_name("github-repo" = "talesgomes27/blog") |>
+  meta_viewport() |>
   meta_social(
     title = "Blog do Tales",
     url = "blogdotales.netlify.app",

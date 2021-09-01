@@ -22,4 +22,4 @@ navbar:
 output:
   distill::distill_article:
     toc: true
-    css: mrworthington_theme.css
+    css: theme.css
