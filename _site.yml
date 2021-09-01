@@ -6,12 +6,11 @@ output_dir: "docs"
 navbar:
   right:
     - icon: fas fa-home
+      text: Home
       href: index.html
-    - icon: fas fa-pencil-alt
+    - text: Blog
       href: blog.html
-    - icon: fas fa-address-card
-      href: about.html
-    - icon: fas fa-briefcase
+    - icon: fas fa-file-alt
       href: https://github.com/talesgomes27/
     - icon: fab fa-github
       href: https://github.com/talesgomes27/
@@ -20,11 +19,11 @@ navbar:
     - icon: fas fa-envelope
       href: mailto:talesgomes27@gmail.com
     - icon: far fa-lightbulb
+
       
 output:
   distill::distill_article:
     includes:
-      in_header: "_utterances.html"
       after_body: "_after_body.html"
     toc: true
     css: theme2.css

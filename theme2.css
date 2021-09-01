@@ -9,21 +9,21 @@
   --text-font-family: 'Noto Sans';
   --text-header: 'Lato';
   --main-text-color: #eeeeee;
-  --secondary-text-color: #72faca;
+  --secondary-text-color: #1F618D;
   --surface1: #262626;
   --surface2: #393e46;
-  --main-link: #72faca;
+  --main-link: #1F618D;
   --boarder: rgba(255, 255, 255, 0.31);
   
 }
 
 
 .light {
-  --surface1: white;
+  --surface1: #F5F5F5;
   --surface2: #333333;
   --main-text-color: #373D3F;
-  --main-link: #0bbd7e;
-  --secondary-text-color: #0bbd7e;
+  --main-link: #1F618D;
+  --secondary-text-color: #1F618D;
   --boarder: rgba(0, 0, 0, 0.31);
 }
 
@@ -89,13 +89,20 @@
 .distill-site-footer a {
   font-size: 20px;
   background-color: #393e46;
-  color: #72faca;
+  color: #5499C7;
 }
 
 .distill-site-footer svg {
   height: 20px;
-  fill: #72faca;
+  fill: #5499C7;
 }
+
+.distill-site-footer svg:hover {
+  height: 20px;
+  fill: --secondary-text-color;
+}
+
+
 
 /*####################################################*/
 
@@ -238,6 +245,7 @@ a.post-preview {
   color: var(--main-link);
 }
 
+
 /*##################################################*/
 
 /*SIDE BAR*/
@@ -377,7 +385,7 @@ hr {
 }
 
 .btn-outline-dark:hover {
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
     background-color: var(--surface1);
     border-color: var(--main-link);
 }

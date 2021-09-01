@@ -2,21 +2,25 @@
 title: "Tales Gomes"
 image: "static/pic2.jpg"
 links:
-  - label: '<i class="fab fa-github"></i> GitHub'
+  - label: '<i class="fab fa-github fa-3x"></i>'
     url: "https://github.com/talesgomes27"
-  - label: '<i class="fab fa-twitter"></i> Twitter'
+  - label: '<i class="fab fa-twitter fa-3x"></i>'
     url: "https://twitter.com/talesgomes2709"
-  - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+  - label: '<i class="fab fa-linkedin fa-3x"></i>'
     url: "https://www.linkedin.com/in/tales-gomes-b4b12b32/"
-  - label: '<i class="fas fa-envelope"></i> E-mail'
+  - label: '<i class="fas fa-envelope fa-3x"></i>'
     url: "mailto:talesgomes27@gmail.com"
 base_url: blogdotales.netlify.app
 preview: static/pic2.jpg
 twitter:
   creator: "@talesgomes27"
 site: distill::distill_website
-output: postcards::trestles
+output: postcards::jolla
 ---
+
+
+
+
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
 source(file.path("R", "functions.R"))
@@ -38,9 +42,11 @@ meta() |>
     twitter_card_type = "summary",
     twitter_creator = "@talesgomes27"
   )
-create_footer()
+#create_footer()
 
 ```
+
+
 
 ### Seja bem vindo ao meu blog pessoal!
 
