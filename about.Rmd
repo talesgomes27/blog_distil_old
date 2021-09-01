@@ -14,7 +14,7 @@ base_url: blogdotales.netlify.app
 preview: static/pic2.jpg
 twitter:
   creator: "@talesgomes27"
-output: postcards::jolla_blue
+output: postcards::trestles
 ---
 
 
