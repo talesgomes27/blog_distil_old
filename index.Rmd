@@ -15,8 +15,7 @@ preview: static/pic2.jpg
 twitter:
   creator: "@talesgomes27"
 site: distill::distill_website
-output:
-  postcards::trestles
+output: postcards::trestles
 ---
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
@@ -32,13 +31,15 @@ meta() |>
   meta_social(
     title = "Blog do Tales",
     url = "blogdotales.netlify.app",
-    image = "blogdotales.netlify.app/images/helveston.png",
+    image = "blogdotales.netlify.app/static/pic2.jpg",
     image_alt = "Foto de Tales Gomes",
     og_type = "blog",
     og_author = c("Tales Gomes"),
     twitter_card_type = "summary",
     twitter_creator = "@talesgomes27"
   )
+create_footer()
+
 ```
 
 ### Seja bem vindo ao meu blog pessoal!

@@ -5,11 +5,11 @@ description: |
 output_dir: "docs"
 navbar:
   right:
-    - text: "Home"
+    - icon: fas fa-home
       href: index.html
-    - text: "Blog"
+    - icon: fas fa-pencil-alt
       href: blog.html
-    - text: "Sobre"
+    - icon: fas fa-address-card
       href: about.html
     - icon: fas fa-briefcase
       href: https://github.com/talesgomes27/
@@ -19,7 +19,12 @@ navbar:
       href: https://www.linkedin.com/in/tales-gomes-b4b12b32/
     - icon: fas fa-envelope
       href: mailto:talesgomes27@gmail.com
+    - icon: far fa-lightbulb
+      
 output:
   distill::distill_article:
+    includes:
+      in_header: "_utterances.html"
+      after_body: "_after_body.html"
     toc: true
-    css: theme.css
+    css: theme2.css

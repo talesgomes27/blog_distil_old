@@ -182,19 +182,19 @@ create_footer <- function() {
   height <- '14px'
   
   footer <- HTML(paste0(
-    '© 2021 John Paul Helveston [',
+    '© 2021 Tales Gomes [',
     fontawesome::fa('creative-commons', fill = fill, height = height),
     fontawesome::fa('creative-commons-by', fill = fill, height = height),
     fontawesome::fa('creative-commons-sa', fill = fill, height = height),
     '](https://creativecommons.org/licenses/by-sa/4.0/)\n',
     br(),
-    fontawesome::fa('wrench', fill = fill, height = height), ' Made with ',
+    fontawesome::fa('wrench', fill = fill, height = height), ' Feito com ',
     fontawesome::fa('heart', fill = fill, height = height), ', [',
     fontawesome::fa('code-branch', fill = fill, height = height),
-    '](https://github.com/jhelvy), and the [',
+    '](https://github.com/talesgomes27), e o pacote [',
     fontawesome::fa('r-project', fill = fill, height = height),
     '](https://cran.r-project.org/) ',
-    '[distill](https://github.com/rstudio/distill) package\n',
+    '[distill](https://github.com/rstudio/distill) \n',
     br(),
     last_updated(), "\n\n",
     
@@ -206,11 +206,14 @@ create_footer <- function() {
   save_raw(footer, "_footer.html")
 }
 
+
+
 last_updated <- function() {
   return(span(
     paste0(
       'Ultima atualização em ',
-      format(Sys.Date(), format="%d %B, %Y")
+      #format(Sys.Date(), format="%d de %B de %Y")
+      format(Sys.Date(), format="%B de %Y")
     ),
     style = "font-size:0.8rem;")
   )
