@@ -2,13 +2,13 @@
 title: "Tales Gomes"
 image: "static/pic2.jpg"
 links:
-  - label: '<i class="fab fa-github fa-3x"></i>'
+  - label: '<i class="fab fa-github fa-3x" title="Github"></i>'
     url: "https://github.com/talesgomes27"
-  - label: '<i class="fab fa-twitter fa-3x"></i>'
+  - label: '<i class="fab fa-twitter fa-3x" title="Twitter"></i>'
     url: "https://twitter.com/_talesgomes"
-  - label: '<i class="fab fa-linkedin fa-3x"></i>'
+  - label: '<i class="fab fa-linkedin fa-3x" title="Linkedin"></i>'
     url: "https://www.linkedin.com/in/tales-gomes-b4b12b32/"
-  - label: '<i class="fas fa-envelope fa-3x"></i>'
+  - label: '<i class="fas fa-envelope fa-3x" title="E-mail"></i>'
     url: "mailto:talesgomes27@gmail.com"
 base_url: blogdotales.netlify.app
 preview: static/pic2.jpg

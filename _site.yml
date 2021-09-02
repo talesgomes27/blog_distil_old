@@ -6,7 +6,6 @@ output_dir: "docs"
 navbar:
   right:
     - icon: fas fa-home
-      text: Home
       href: index.html
     - text: Blog
       href: blog.html
