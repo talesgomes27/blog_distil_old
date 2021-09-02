@@ -9,8 +9,6 @@ navbar:
       href: index.html
     - text: Blog
       href: blog.html
-    - icon: fas fa-file-alt
-      href: https://github.com/talesgomes27/
     - icon: fab fa-github
       href: https://github.com/talesgomes27/
     - icon: fab fa-linkedin-in
