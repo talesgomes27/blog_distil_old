@@ -5,7 +5,7 @@ links:
   - label: '<i class="fab fa-github fa-3x"></i>'
     url: "https://github.com/talesgomes27"
   - label: '<i class="fab fa-twitter fa-3x"></i>'
-    url: "https://twitter.com/talesgomes2709"
+    url: "https://twitter.com/_talesgomes"
   - label: '<i class="fab fa-linkedin fa-3x"></i>'
     url: "https://www.linkedin.com/in/tales-gomes-b4b12b32/"
   - label: '<i class="fas fa-envelope fa-3x"></i>'
@@ -13,7 +13,7 @@ links:
 base_url: blogdotales.netlify.app
 preview: static/pic2.jpg
 twitter:
-  creator: "@talesgomes27"
+  creator: "@_talesgomes"
 site: distill::distill_website
 output: postcards::jolla
 ---
@@ -35,12 +35,12 @@ meta() |>
   meta_social(
     title = "Blog do Tales",
     url = "blogdotales.netlify.app",
-    image = "blogdotales.netlify.app/static/pic2.jpg",
+    image = "https://raw.githubusercontent.com/talesgomes27/blog/main/static/pic2.jpg",
     image_alt = "Foto de Tales Gomes",
     og_type = "blog",
     og_author = c("Tales Gomes"),
     twitter_card_type = "summary",
-    twitter_creator = "@talesgomes27"
+    twitter_creator = "@_talesgomes"
   )
 #create_footer()
 
