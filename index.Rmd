@@ -37,7 +37,7 @@ meta() |>
     url = "blogdotales.netlify.app",
     image = "https://raw.githubusercontent.com/talesgomes27/blog/main/static/pic2.jpg",
     image_alt = "Foto de Tales Gomes",
-    og_type = "blog",
+    og_type = "site",
     og_author = c("Tales Gomes"),
     twitter_card_type = "summary",
     twitter_creator = "@_talesgomes"
