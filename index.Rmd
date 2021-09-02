@@ -1,5 +1,5 @@
 ---
-title: "Tales Gomes"
+title: ""
 image: "static/pic2.jpg"
 links:
   - label: '<i class="fab fa-github fa-3x" title="Github"></i>'
@@ -48,6 +48,12 @@ meta() |>
 
 
 
-### Seja bem vindo ao meu blog pessoal!
 
-Sou engenheiro da computação, formado pela universidade federal do Pará, Analista de dados e Ciência de dados estudante.
+## Me chamo Tales!
+
+→ Sou Engenheiro da computação formado pela universidade federal do Pará; 
+
+→ Sou analista de dados e aficionado por ciência de dados;
+
+→ Este blog foi criado com a intenção de compartilhar minha jornada na ciência de dados;
+
