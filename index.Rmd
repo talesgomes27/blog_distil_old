@@ -55,5 +55,5 @@ meta() |>
 
 → Sou analista de dados e aficionado por ciência de dados;
 
-→ Este blog foi criado com a intenção de compartilhar minha jornada na ciência de dados;
+→ Este site foi criado com a intenção de compartilhar minha jornada na ciência de dados.
 
