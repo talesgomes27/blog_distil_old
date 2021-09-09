@@ -2715,7 +2715,7 @@ d-article blockquote {
 <p>Este projeto tem como objetivo encontrar tendências de uso dos usuários para assim ajudar a melhorar o comportamento do <em>Bellabeat</em> (Aplicativo do medidor de saúde da Bellabeat).</p>
 <h2 id="preparação-e-processamento-dos-dados">Preparação e processamento dos dados</h2>
 <h3 id="descrição-dos-dados">Descrição dos dados</h3>
-<p>Será utilizado o banco de dados do fitibit do <a href="https://www.kaggle.com/arashnic/fitbit">kaggle</a>, o qual é composto por 18 planilhas contendo dados de atividades, passos, calorias, sono e batimento cardíaco de uma lista de usuários que consentiram em compartilhas as informações. O banco de dados está sob a licença <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0: Public Domain</a>. Sendo que para esta tarefa especifica foi escolhido trabalhar com dados diários fornecidos pelos usuários, sendo utilizadas seguintes as tabelas:</p>
+<p>Será utilizado o banco de dados do fitibit do <a href="https://www.kaggle.com/arashnic/fitbit">kaggle</a>, o qual é composto por 18 planilhas contendo dados de atividades, passos, calorias, sono e batimento cardíaco de uma lista de usuários que consentiram em compartilhar informações. O banco de dados está sob a licença <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0: Public Domain</a>. Sendo que para esta tarefa especifica foi escolhido trabalhar com dados diários fornecidos pelos usuários, sendo utilizadas seguintes as tabelas:</p>
 <ul>
 <li><p><em>“dailyActivity_merged”</em> que contém dados de atividades diárias, como distância percorrida, passos, calorias gastas, tempo sedentário e de atividades leves, moderadas ou avançadas;</p></li>
 <li><p><em>“sleepDay_merged”</em> que contém informações de quantidade de sono, tempo na deitado cama e número de eventos de sono;</p></li>
@@ -2729,10 +2729,9 @@ d-article blockquote {
 <li><p>Em cada tabela a coluna responsável pelo armazenamento da data do registro foi alterada do tipo string para o tipo data, tendo seus nomes alterados para “date” afim de facilitar a manipulação dos dados;</p></li>
 <li><p>Na tabela <em>“heartrate_seconds_merged”</em> foi alterada a escala temporal de segundos para diário e calculado a média de batimentos cardíacos por dia;</p></li>
 <li><p>Foi feita a união das tabelas através de uma <em>left-join</em> entre a tabela <em>“dailyActivity_merged”</em> e as outras 3 tabelas;</p></li>
-<li><p>Todas as planilhas de tempo foram alteradas de minutos para horas;</p></li>
 <li><p>A coluna que contém o ID dos usuários foi alterada para algo mais legível, foi escolhido o prefixo “U” seguido por um numeral. Como por exemplo “U1” para usuário 1;</p></li>
 <li><p>A ordem das colunas foi alterada para que colunas correlacionadas fiquem adjacente uma a outra;</p></li>
-<li><p>O resultado foi salvo na numa variável e numa planilha <em>Excel</em> chamadas <em>“daily_data”</em>.</p></li>
+<li><p>O resultado foi salvo na numa variável chamada <em>“daily_data”</em>.</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">

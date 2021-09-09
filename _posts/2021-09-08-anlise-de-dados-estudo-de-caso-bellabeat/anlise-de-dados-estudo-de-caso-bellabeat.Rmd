@@ -87,7 +87,7 @@ Este projeto tem como objetivo encontrar tendências de uso dos usuários para a
 
 ### Descrição dos dados
 
-Será utilizado o banco de dados do fitibit do [kaggle](https://www.kaggle.com/arashnic/fitbit), o qual é composto por 18 planilhas contendo dados de atividades, passos, calorias, sono e batimento cardíaco de uma lista de usuários que consentiram em compartilhas as informações. O banco de dados está sob a licença [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/). Sendo que para esta tarefa especifica foi escolhido trabalhar com dados diários fornecidos pelos usuários, sendo utilizadas seguintes as tabelas:
+Será utilizado o banco de dados do fitibit do [kaggle](https://www.kaggle.com/arashnic/fitbit), o qual é composto por 18 planilhas contendo dados de atividades, passos, calorias, sono e batimento cardíaco de uma lista de usuários que consentiram em compartilhar informações. O banco de dados está sob a licença [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/). Sendo que para esta tarefa especifica foi escolhido trabalhar com dados diários fornecidos pelos usuários, sendo utilizadas seguintes as tabelas:
 
 -   *"dailyActivity_merged"* que contém dados de atividades diárias, como distância percorrida, passos, calorias gastas, tempo sedentário e de atividades leves, moderadas ou avançadas;
 
@@ -109,13 +109,11 @@ Para desempenhar esta análise foi escolhido a linguagem de programação [R](ht
 
 -   Foi feita a união das tabelas através de uma *left-join* entre a tabela *"dailyActivity_merged"* e as outras 3 tabelas;
 
--   Todas as planilhas de tempo foram alteradas de minutos para horas;
-
 -   A coluna que contém o ID dos usuários foi alterada para algo mais legível, foi escolhido o prefixo "U" seguido por um numeral. Como por exemplo "U1" para usuário 1;
 
 -   A ordem das colunas foi alterada para que colunas correlacionadas fiquem adjacente uma a outra;
 
--   O resultado foi salvo na numa variável e numa planilha *Excel* chamadas *"daily_data"*.
+-   O resultado foi salvo na numa variável chamada *"daily_data"*.
 
 ```{r Limpeza dados, message=FALSE, warning=FALSE, echo=TRUE}
 
